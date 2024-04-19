@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3 id="clock"></h3>
+    <div class="dropdown">
+        <label for="location">Location:</label>
+        <select id="location">
+            <option value="main">Main</option>
+            <option value="basak">Basak</option>
+        </select>
+    </div>
+
+    <div class="radio-group">
+        <label class="radio-label">
+            <input type="radio" name="shape" value="current" checked>
+            Current
+        </label>
+        <label class="radio-label">
+            <input type="radio" name="shape" value="right-triangle">
+            Right Triangle
+        </label>
+        <label class="radio-label">
+            <input type="radio" name="shape" value="parallelogram">
+            Parallelogram
+        </label>
+    </div>
+
+    <button class="button" id="start-button">Start</button>
+
+    <h1>Parking Preference and Assignment</h1>
+
+    <div class="chart-container">
+        <canvas id="PS_Monday"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="PS_Tuesday"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="PS_Wednesday"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="PS_Thursday"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="PS_Friday"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="PS_Saturday"></canvas>
+    </div>
+
+
+    <h1>Parking Capacity and Demand </h1>
+
+    <div class="chart-container2">
+        <canvas id="CD_Monday"></canvas>
+    </div>
+    <div class="chart-container2">
+        <canvas id="CD_Tuesday"></canvas>
+    </div>
+    <div class="chart-container2">
+        <canvas id="CD_Wednesday"></canvas>
+    </div>
+    <div class="chart-container2">
+        <canvas id="CD_Thursday"></canvas>
+    </div>
+    <div class="chart-container2">
+        <canvas id="CD_Friday"></canvas>
+    </div>
+    <div class="chart-container2">
+        <canvas id="CD_Saturday"></canvas>
+    </div>
+
+
+    <h1>Parking Space and Utilization </h1>
+
+    <div>
+        <canvas id="spaceUtilizationChart"></canvas>
+    </div>
+    <!-- <script src="app.js"></script>     -->
+    <script src="testGraph.js"></script>
+</body>
+</html>
